@@ -1,0 +1,44 @@
+/* assets/css/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إنشاء حساب المكتب</title>
+
+  <!-- Bootstrap RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/register.css" />
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">مركز الكفاءات العالمية</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">الصفحة الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link active" href="register.html">إنشاء حساب</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">تسجيل الدخول</a></li>
+          <li class="nav-item"><a class="nav-link" href="requests.html">الطلبات</a></li>
+          <li class="nav-item"><a class="nav-link" href="complaints.html">الشكاوى</a></li>
+          <li class="nav-item"><a class="nav-link" href="finance.html">إدارة المالية</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Form Section -->
+  <div class="container my-5">
+    <div class="bg-white p-4 p-md-5 shadow-sm rounded-3">
+      <h2 class="text-center mb-4">إنشاء حساب مكتب</h2>
+      <form action="/submit-form" method="POST" enctype="multipart/form-data">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">اسم المكتب</label>
+            <input type="text" class="form-control" name="office_name" placeholder="أدخل اسم المكتب" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">رقم السجل التجاري</label>
+            <input type="text" class="form-control" name="registration_number" placeholder="أدخل رقم السجل" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">الأيميل</label>
+            <input type="email" class="form-control" name="registration_number" placeholder="الجيميل" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">الباسورد</label>
+            <input type="text" class="form-control" name="registration_number" placeholder="الباسورد" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">اسم صاحب المكتب</label>
+            <input type="text" class="form-control" name="owner_name" placeholder="أدخل اسم صاحب المكتب" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">المحافظة</label>
+            <input type="text" class="form-control" name="governorate" placeholder="أدخل المحافظة" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">المدينة</label>
+            <input type="text" class="form-control" name="city" placeholder="أدخل المدينة" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">رقم الهاتف</label>
+            <input type="tel" class="form-control" name="phone" placeholder="أدخل رقم الهاتف" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">مرفق السجل التجاري</label>
+            <input type="file" class="form-control" name="registration_file" accept=".pdf,.jpg,.png" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">مرفق البطاقة الشخصية</label>
+            <input type="file" class="form-control" name="id_file" accept=".pdf,.jpg,.png" required />
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-primary px-5 py-2">تسجيل</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
